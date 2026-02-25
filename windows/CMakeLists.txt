@@ -29,7 +29,7 @@ add_library(clipboard_plugin SHARED
 
 # Apply standard settings
 target_compile_features(clipboard_plugin PUBLIC cxx_std_17)
-target_compile_options(clipboard_plugin PRIVATE /W4 /WX /wd"4100")
+target_compile_options(clipboard_plugin PRIVATE /W4 /wd"4100")
 target_compile_options(clipboard_plugin PRIVATE /EHsc)
 target_compile_definitions(clipboard_plugin PRIVATE "_HAS_EXCEPTIONS=0")
 target_compile_definitions(clipboard_plugin PRIVATE "$<$<CONFIG:Debug>:_DEBUG>")
